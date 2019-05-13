@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+tr, td, table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.firstRow {
+	background-color: rgb(204, 192, 218);
+	font-weight: bold;
+}
+
+.secondRow {
+	background-color: rgb(252, 213, 180);
+}
+</style>
+<title>Pentathlon table</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="main.js"></script>
+</head>
+
+<body>
+	<div>
+		<table id="myTable">
+			<tbody>
+				<tr class="firstRow">
+					<th>Place</th>
+					<th>Athlete name</th>
+					<th>Fencing</th>
+					<th>Swimming</th>
+					<th colspan="3">Riding</th>
+					<th>Shooting</th>
+					<th>Run</th>
+					<th>Score</th>
+				</tr>
+				<tr class="secondRow">
+					<th></th>
+					<th></th>
+					<th>Victories</th>
+					<th>Time</th>
+					<th>Knocking down</th>
+					<th>Refusal</th>
+					<th>Disobediance leading</th>
+					<th>Target score</th>
+					<th>Time</th>
+					<th>Total score</th>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+	<table>
+		<tr>
+			<td><h4>Show data from file</h4>
+				<form method="POST" action="/showFile" enctype="multipart/form-data">
+					<input type="file" name="file" /><br /> <br />
+				    <input type="submit" value="Submit" />
+				</form></td>
+			<td>
+				<h4>Add data from file</h4>
+				<form method="POST" action="/addFile" enctype="multipart/form-data">
+					<input type="file" name="file" /><br /> <br />
+					<input type="submit" value="Submit" />
+				</form>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>
