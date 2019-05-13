@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Pentathlon.LogicTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-05-13T18:40:13" hostname="Markus-PC" time="0.018">
+  <properties/>
+  <testcase name="scoreCountingTest" classname="Pentathlon.LogicTests" time="0.017"/>
+  <testcase name="convertingTimeTest" classname="Pentathlon.LogicTests" time="0.0"/>
+  <system-out><![CDATA[D:\Users\Lenovo\Desktop\programavimas\java\web\Pentathlon\dataFiles\Athlete_Results.csv
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
