@@ -19,7 +19,7 @@ public class Application {
     @Bean
     public CommandLineRunner init(AthleteRepository repository) {
     	return (args) ->{
-    		Reader.readData("C:\\Users\\Markus\\Downloads\\tTask\\Athlete_Results.csv", repository);
+    		Reader.readData(System.getProperty("user.dir")+"\\dataFiles\\Athlete_Results.csv", repository);
     	};
     }
 

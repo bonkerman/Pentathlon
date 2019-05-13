@@ -23,8 +23,9 @@ public class LogicTests {
 	    
 	    @Test
 	    public void scoreCountingTest() throws Exception {
-	    	List<Athlete> athletes = Reader.readData("C:\\Users\\Markus\\Downloads\\Task\\Athlete_Results.csv");
+	    	List<Athlete> athletes = Reader.readData(System.getProperty("user.dir")+"\\dataFiles\\Athlete_Results.csv");
 	        assertThat(athletes.size()).isEqualTo(10);
+	        System.out.println(System.getProperty("user.dir")+"\\dataFiles\\Athlete_Results.csv");
 	        assertThat(athletes.get(3).getFencingWins()).isEqualTo(0);
 	        assertThat(athletes.get(1).getShootingScore()).isEqualTo(1276);
 	        assertThat(athletes.get(3).getTotalScore()).isEqualTo(3356);
